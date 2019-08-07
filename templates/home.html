@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>S-Maps</h1>
+    <h4>Find sports to play in your area</h4>
+    
+    <form method=POST action="/">
+      Player Name:<br>
+      <input type="text" name="user-first-ln" value="Player Name Here">
+      <br>
+       Number of Players:<br>
+      <input type="number" name="user-second-ln" value="Number of Players Here">
+      <br>
+      
+      Sport:<br>
+     <select name="sports-type">
+        <option value="basketball">Basketball</option>
+        <option value="football">Football</option>
+        <option value="soccer">Soccer</option>
+        <option value="tennis">Tennis</option>
+      </select>
+      
+      <input type="submit" value="Find a Game!">
+    </form>
+  </body>
+</html>
