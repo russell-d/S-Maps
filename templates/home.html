@@ -2,28 +2,67 @@
 <html>
   <head>
     <title>Home</title>
+    <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
     <h1>S-Maps</h1>
-    <h4>Find sports to play in your area</h4>
-    
-    <form method=POST action="/">
-      Player Name:<br>
+    <h5>Find sports to play in your area</h5>
+    <style>
+              
+body{
+    background-color:blue;
+    text-align:center;
+    color:white;
+    font-family: cursive;
+}
+
+input[type=text]{
+  font-family: cursive;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 15px;
+  background-color:white;
+}
+
+input[type=submit]{
+  font-family:Helvetica;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 15px;
+  background-color:white;
+  cursor: pointer;
+}
+
+
+
+    </style>
+    <form id="input-text "method=POST action="/">
+      Player Name<br>
       <input type="text" name="user-first-ln" value="Player Name Here">
       <br>
-       Number of Players:<br>
-      <input type="number" name="user-second-ln" value="Number of Players Here">
+      
+      Park Name <br>
+      <input type="text" name="user-second-ln" value="Park Name Here">
+      <br>
+      
+      Time <br>
+      <input type="text" name="user-third-ln" value="Time Here">
+      <br>
+      
+      Date <br>
+      <input type="text" name="user-fourth-ln" value="Date Here">
       <br>
       
       Sport:<br>
-     <select name="sports-type">
+     <select name="sports-type" class="custom-select">
         <option value="basketball">Basketball</option>
         <option value="football">Football</option>
         <option value="soccer">Soccer</option>
         <option value="tennis">Tennis</option>
       </select>
-      
-      <input type="submit" value="Find a Game!">
+      <br>
+      <br>
+      <input type="submit" value="Find a Game!" onclick="window.location.href = 'https://website.com/my-account';"">
     </form>
   </body>
 </html>
